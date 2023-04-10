@@ -51,7 +51,7 @@ const Main = () => {
   return (
     <>
       <div className="container">
-        <div className="container3 mt-5">
+        <div className="container3 mt-2">
           <form className="d-flex fm">
             <input
               className="form-control me-2 inp"

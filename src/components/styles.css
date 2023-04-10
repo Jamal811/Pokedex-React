@@ -14,7 +14,7 @@ body {
 .container2 {
   width: 90%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 30px;
   display: flex;
 }
 .left-content,
@@ -45,7 +45,6 @@ body {
 .right-content {
   width: 50%;
   text-align: center;
-  color: black;
   position: fixed;
   top: 100px;
   right: 10px;
@@ -95,12 +94,12 @@ body {
 .card-right {
   position: relative; /* set position to relative to position the close button */
   width: 500px;
-  margin: 150px 0 0 200px;
+  margin: 46px 0 0 200px;
   background-color: #262f5b;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(28, 181, 166, 0.1);
   border-radius: 5px;
-
   color: white;
+  padding: 5px;
 }
 
 .card-close-button {
