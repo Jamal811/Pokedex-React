@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(131, 56, 166, 1) 52%,
+    rgba(56, 56, 166, 1) 100%
+  );
+}
+.container2 {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+}
+.left-content,
+.right-content {
+  flex-basis: 50%;
+}
+.left-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-gap: 3rem;
+}
+.card {
+  width: 300px;
+  background-color: #9edef9;
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.right-content {
+  width: 50%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+.right-content img {
+  margin: 1.5rem;
+  height: 160px;
+}
+.right-content h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.abilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abilities .group {
+  background-color: #b74555;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+.base-stat {
+  margin-top: 10px;
+}
+.base-stat h3 {
+  font-size: 25px;
+}
+.btn-group {
+  display: flex;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 200px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #b74555;
+  border-radius: 8px;
+}
+.card-right {
+  position: relative; /* set position to relative to position the close button */
+  width: 500px;
+  margin: 150px 0 0 200px;
+  background-color: #262f5b;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  color: white;
+}
+
+.card-close-button {
+  position: absolute; /* set position to absolute to position the button relative to the card */
+  top: 10px; /* set top position */
+  right: 10px; /* set right position */
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.card-close-button:hover {
+  color: red;
+}
+.hide-card {
+  display: none;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fm {
+  height: 50px;
+  width: 700px;
+}
+@media screen and (max-device-width: 480px) {
+  .fm {
+    width: 100%;
+  }
+  .card {
+    height: 170px;
+  }
+  .card-right {
+    display: none;
+  }
+}
